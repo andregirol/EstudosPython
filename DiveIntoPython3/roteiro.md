@@ -37,4 +37,17 @@ soma(valor2 = 10, valor1 = 5)
 
 No entanto, desde que o primeiro argumento nomeado apareça, todos os subsequentes devem ser nomeados também
 
+# Tudo em Python é um objeto
+
+Módulos, funções, literais, todos são objetos.
+
+Se você abrir agora o shell interativo do Python e rodar o seguinte:
+
+```python
+import humansize
+```
+
+Você acabou de instanciar um **objeto** do tipo **módulo** e pode acessar seus atributos, métodos, classes funções, constantes, etc...
+
+```python
 
