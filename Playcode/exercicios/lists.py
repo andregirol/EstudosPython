@@ -20,6 +20,20 @@ print(powered)
 # Task 2 - Filter all the even numbers in the list
 # Expected output: [2, 4]
 
+even = []
+for number in numbers:
+    if number % 2 == 0:
+        even.append(number)
+
+print("All even numbers are: ", even)
+
 
 # Task 3 - Sum all the odd numbers in the list
 # Expected output: 4
+
+odd_sum = 0
+for number in numbers:
+    if number % 2 == 1:
+        odd_sum += number
+
+print("Odd numbers sum:", odd_sum)
