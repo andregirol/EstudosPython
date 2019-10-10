@@ -10,3 +10,36 @@ Examples:
 racecar
 madam
 """
+
+def is_palindrome(given_string):
+    special_chars = "?'! ,"
+
+    palindromic = ''
+    for letra in given_string:
+        if letra in special_chars:
+            continue
+        else:
+            palindromic += letra.lower()
+
+    return palindromic == palindromic[::-1]
+
+
+given_string = 'A man, a plan, a canal, Panama!'
+assert is_palindrome(given_string) == True
+
+given_string = 'madam'
+assert is_palindrome(given_string) == True
+
+given_string = 'racecar'
+assert is_palindrome(given_string) == True
+
+given_string = "Was it a car or a cat I saw?"
+assert is_palindrome(given_string) == True
+
+given_string = "No 'x' in Nixon"
+assert is_palindrome(given_string) == True
+
+given_string = "42024"
+assert is_palindrome(given_string) == True
+
+print('Passed!')
