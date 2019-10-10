@@ -8,6 +8,14 @@ numbers = [1, 2, 3, 4]
 # Expected output:
 # [1, 4, 9, 16]
 
+# Solution 1
+square = lambda x: x**2
+powered = []
+for number in numbers:
+    powered.append(square(number))
+
+print(powered)
+
 
 # Task 2 - Filter all the even numbers in the list
 # Expected output: [2, 4]
